@@ -1,12 +1,112 @@
-.App {
-  background-color: #e0e0e0;
-  min-height: 100vh;
+
+
+section.products {
+  overflow: hidden;
+  z-index: 2;
+  height: calc(300vw + 500px);
+  position: relative;
 }
 
-.App-header {
-  /* min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
+section.products #products-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+section.products #svg-container {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+}
+
+svg.anim {
+  height: 53vw;
+  width: 300vw;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+section svg {
+  display: block;
+  height: 62.5vw;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+section.products #svg-container svg.anim.svg-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke-width: 6px;
+}
+
+#product.inview section.products .title {
+  opacity: 1;
+  transition: all 1s ease .5s;
+}
+
+section.products .title {
+  position: absolute;
+  top: 0;
+  left: 6.5vw;
+  width: 36vw;
+  height: 100vh;
+  z-index: 3;
+  opacity: 0;
+  transition: all .35s ease 0s;
+}
+
+section.products .txt.old.old-0 {
+  left: 18.1%;
+}
+
+section.products .txt.old {
+  max-width: 320px;
+  color: #27363b;
+  top: 40%;
+}
+
+section.products .txt {
+  top: 0;
+  left: 0;
+  max-width: 260px;
+}
+
+#line-svg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+#root {
+  position: relative;
+}
+
+.full-screen {
+  height: 100vh;
 }
