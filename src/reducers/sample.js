@@ -4,13 +4,10 @@ const INITIAL_STATE = {
   count: 0
 }
 
-function sampleReducer (state = INITIAL_STATE, action) {
-  console.log(state)
-  console.log(action)
-  switch (action.type) {
+function sampleReducer (state = INITIAL_STATE, {type, payload}) {
+  switch (type) {
     case SAMPLE_ACTION : {
-      console.log('sample action')
-      return {...state, count: action.count}
+      return {...state, count: state.count + 1}
     }
     default: return state
   }
