@@ -179,9 +179,9 @@ function App ({count, sampleThing}) {
   }, [])
   return (
     <React.Fragment>
-      <Container minHeight={'100vh'} bg='lightGrey' px={5} py={4}>
+      <Container minHeight={'100vh'} bg='lightGrey' px={5} py={4} style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <Reset />
-        <header style={{position: 'absolute'}}>
+        <header style={{display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
           <div>
             <div class='logo-animation-wrapper'>
               <div class='logo-animation'>
@@ -239,6 +239,9 @@ function App ({count, sampleThing}) {
                     <div class='logo-letter letter-e'>
                       <svg class='bounced' width='63.901' height='131.252' viewBox='0 0 63.901 131.252'><g id='svgGroup' stroke-linecap='round' fill-rule='evenodd' font-size='9pt' stroke='#000' stroke-width='0.25mm' fill='none'><path class='line' d='M 0.001 91.651 L 0.001 36.151 A 64.118 64.118 0 0 1 0.739 26.081 Q 1.581 20.797 3.384 16.564 A 27.836 27.836 0 0 1 7.951 9.151 Q 15.901 0.001 31.651 0.001 A 51.653 51.653 0 0 1 39.063 0.499 Q 43.01 1.072 46.219 2.306 A 22.892 22.892 0 0 1 51.451 5.101 Q 58.501 10.201 61.201 19.951 A 64.259 64.259 0 0 1 62.82 27.859 Q 63.901 35.319 63.901 45.001 L 38.701 45.001 L 38.701 33.451 Q 38.701 28.801 37.426 26.251 A 4.336 4.336 0 0 0 34.331 23.85 A 6.891 6.891 0 0 0 32.851 23.701 A 7.893 7.893 0 0 0 29.507 24.358 Q 26.159 25.908 25.609 31.114 A 20.858 20.858 0 0 0 25.501 33.301 L 25.501 95.701 A 36.931 36.931 0 0 0 25.62 98.766 Q 25.923 102.394 27.001 104.551 A 5.187 5.187 0 0 0 28.982 106.753 Q 30.317 107.551 32.251 107.551 A 7.249 7.249 0 0 0 34.327 107.272 A 5.056 5.056 0 0 0 37.501 104.551 Q 38.859 101.834 38.988 96.781 A 42.557 42.557 0 0 0 39.001 95.701 L 39.001 77.251 L 32.101 77.251 L 32.101 55.051 L 63.601 55.051 L 63.601 130.051 L 53.251 130.051 L 48.901 119.251 A 24.13 24.13 0 0 1 41.901 127.131 Q 37.161 130.462 30.737 131.1 A 31.743 31.743 0 0 1 27.601 131.251 A 31.297 31.297 0 0 1 19.213 130.193 A 21.705 21.705 0 0 1 6.826 121.426 Q 0.283 112.006 0.013 93.281 A 113.012 113.012 0 0 1 0.001 91.651 Z' id='0' vector-effect='non-scaling-stroke' /></g></svg>
                     </div>
+                    <div class='logo-letter letter-e'>
+                      <svg class='bounced' width='13.401' height='13.4' viewBox='0 0 13.401 13.4'><g id='svgGroup' stroke-linecap='round' fill-rule='evenodd' font-size='9pt' stroke='#000' stroke-width='0.25mm' fill='none'><path class='line' d='M 0.226 4.64 A 8.86 8.86 0 0 0 0 6.7 Q 0 9.4 2 11.4 A 8.317 8.317 0 0 0 2.063 11.462 A 6.418 6.418 0 0 0 6.7 13.4 A 8.605 8.605 0 0 0 7.323 13.378 A 6.461 6.461 0 0 0 11.5 11.55 Q 13.4 9.7 13.4 6.7 A 6.225 6.225 0 0 0 12.822 4.029 A 6.955 6.955 0 0 0 11.35 2 A 8.478 8.478 0 0 0 10.829 1.531 A 6.325 6.325 0 0 0 6.7 0 Q 5.475 0 4.463 0.264 A 5.698 5.698 0 0 0 1.75 1.8 A 5.976 5.976 0 0 0 0.226 4.64 Z' vector-effect='non-scaling-stroke' /></g></svg>
+                    </div>
                     <div class='bounce'>
                       <svg viewBox='0 0 1000 260' width='1000' height='260' fill='none'>
                         <path d='M630,240 C630,111.154418 608.971354,40 530.160048,40 C451.348741,40 430,127.460266 430,210' />
@@ -252,7 +255,7 @@ function App ({count, sampleThing}) {
           </div>
         </header>
 
-        <div class='center'>
+        <div class='center' style={{display: 'none'}}>
           <svg class='sphere' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'
             width='800px' height='800px' viewBox='0 0 800 800' style={{enableBackground: 'new 0 0 800 800'}}>
 
