@@ -104,7 +104,10 @@ section.products .txt {
     width: 100%;
     left: 0;
     z-index: 2;
-		transform: translateX(100%)
+		transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #line-svg {
