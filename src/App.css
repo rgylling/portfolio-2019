@@ -97,6 +97,16 @@ section.products .txt {
   max-width: 260px;
 }
 
+.cover{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+		transform: translateX(100%)
+}
+
 #line-svg {
   position: absolute;
   width: 150px;
