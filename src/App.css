@@ -1,100 +1,25 @@
 
 
-section.products {
-  overflow: hidden;
-  z-index: 2;
-  height: calc(300vw + 500px);
-  position: relative;
+
+.ml2 .letter {
+  line-height: 1em;
 }
 
-section.products #products-container {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  display: block;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
+.hamburger-menu{
+  background: none;
+  border: none;
+  display: inline-block;
+	z-index: 5
 }
 
-section.products #svg-container {
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  position: relative;
-}
-
-svg.anim {
-  height: 53vw;
-  width: 300vw;
-}
-
-svg:not(:root) {
-  overflow: visible;
-}
-
-section svg {
-  display: block;
-  height: 62.5vw;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-section.products #svg-container svg.anim.svg-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  stroke-width: 6px;
-}
-
-#product.inview section.products .title {
-  opacity: 1;
-  transition: all 1s ease .5s;
-}
-
-section.products .title {
-  position: absolute;
-  top: 0;
-  left: 6.5vw;
-  width: 36vw;
-  height: 100vh;
-  z-index: 3;
-  opacity: 0;
-  transition: all .35s ease 0s;
-}
-
-section.products .txt.old.old-0 {
-  left: 18.1%;
-}
-
-section.products .txt.old {
-  max-width: 320px;
-  color: #27363b;
-  top: 40%;
-}
-
-section.products .txt {
-  top: 0;
-  left: 0;
-  max-width: 260px;
+.icon-bar{
+	background-color: black;
+	display: block;
+	height: 6px;
+	margin: 0 auto 10px;
+	width: 60px;
+	border-radius: 10px;
 }
 
 .cover{
@@ -103,6 +28,7 @@ section.products .txt {
     height: 100%;
     width: 100%;
     left: 0;
+		top: 0;
     z-index: 2;
 		transform: translateX(100%);
     display: flex;
@@ -110,18 +36,18 @@ section.products .txt {
     justify-content: center;
 }
 
-#line-svg {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-}
-
-#root {
-  position: relative;
-}
-
-.full-screen {
-  height: 100vh;
+.nav-overlay{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+		top: 0;
+    z-index: 2;
+		transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -164,82 +90,3 @@ section.products .txt {
   stroke-width: 1;
   stroke: #fff;
 }
-
-/* .logo-animation .fill {
-  opacity: .001;
-  stroke: currentColor;
-  stroke-width: 40px;
-} */
-
-.center {
-  display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.st0{fill:#000;}
-.st1{fill:#000;}
-.st2{fill:#000;}
-.st3{fill:#000;}
-.st4{fill:#000;}
-.st5{fill:#000;}
-.st6{fill:#000;}
-.st7{fill:#000;}
-.st8{fill:#000;}
-.st9{fill:#000;}
-.st10{fill:#000;}
-.st11{fill:#000;}
-.st12{display:inline;fill-rule:evenodd;clip-rule:evenodd;fill:#4830A2;}
-.st13{fill:#000;}
-.st14{fill:#000;}
-.st15{fill:#000;}
-.st16{fill:#000;}
-.st17{fill:#000;}
-.st18{fill:#000;}
-.st19{fill:#000;}
-.st20{fill:#000;}
-.st21{fill:#000;}
-.st22{fill:#000;}
-.st23{fill:#000;}
-.st24{fill:#000;}
-.st25{fill:;}
-.st26{fill:#000;}
-.st27{fill:#000;}
-.st28{fill:#000;}
-.st29{fill:#000;}
-.st30{fill:#000;}
-.st31{fill:#000;}
-.st32{fill:#000;}
-.st33{fill:#000;}
-.st34{fill:#000;}
-.st35{display:none;fill:#7E91C1;}
-.st36{fill:#000;}
-.st37{fill:#000;}
-.st38{fill:#000;}
-.st39{fill:#000;}
-.st40{fill:#000;}
-.st41{fill:#000;}
-.st42{fill:#000;}
-.st43{display:inline;}
-.st44{fill:#000;}
-.st45{fill:#000;}
-.st46{fill:#000;}
-.st47{fill:#000;}
-.st48{fill:#000;}
-.st49{fill:#000;}
-.st50{fill:#000;}
-.st51{fill:#000;}
-.st52{display:none;}
-.st53{fill:#000;}
-.st54{fill:#000;}
-.st55{fill:#000;}
-.st56{fill:#000;}
-.st57{fill:#000;}
-.st58{fill:#000;}
-.st59{fill:#000;}
-.st60{fill:#000;}
-.st61{fill:#000;}
-.st62{fill:#000;}
-.st63{display:inline;fill:#4830A2;}
-.st64{fill:#000;}
-.st65{fill:#000;}
