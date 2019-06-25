@@ -2,7 +2,7 @@ import React from 'react'
 import JobTitle from './JobTitleOverlay.js'
 import MyName from './MyName.js'
 import anime from 'animejs/lib/anime.es.js'
-
+import Blob from './Blob.js'
 const Home = () => {
   React.useEffect(() => {
     anime.set(['.letter-a', '.letter-n', '.letter-i'], {translateX: 70})
@@ -94,11 +94,11 @@ const Home = () => {
         delay: anime.stagger(60, {from: 'center'})
       }, '-=1090')
 			.add({
-				targets: '.bounced',
-				scaleY: [
-					{value: 0, duration: 150, easing: 'easeOutQuart'},
-				],
-			}, '+=10')
+  targets: '.bounced',
+  scaleY: [
+					{value: 0, duration: 150, easing: 'easeOutQuart'}
+  ]
+}, '+=10')
 			.add({
   targets: '.cover',
   translateX: [
@@ -106,28 +106,28 @@ const Home = () => {
   ],
   opacity: {value: [0.001, 1], duration: 50},
   easing: 'easeInOutCubic',
-  duration: '2000',
+  duration: '2000'
   // delay: anime.stagger(75)
 }, '+=300')
 .add({
-	targets: '.ml2 .letter',
-	translateX: [40,0],
-	translateZ: 0,
-	opacity: [0,1],
-	easing: "easeOutExpo",
-	duration: 1200,
-	delay: function(el, i) {
-		return 500 + 30 * i;
-	}
+  targets: '.ml2 .letter',
+  translateX: [40, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1200,
+  delay: function (el, i) {
+    return 500 + 30 * i
+  }
 }).add({
-	targets: '.ml2 .letter',
-	translateX: [0,-30],
-	opacity: [1,0],
-	easing: "easeInExpo",
-	duration: 1100,
-	delay: function(el, i) {
-		return 100 + 30 * i;
-	}
+  targets: '.ml2 .letter',
+  translateX: [0, -30],
+  opacity: [1, 0],
+  easing: 'easeInExpo',
+  duration: 1100,
+  delay: function (el, i) {
+    return 100 + 30 * i
+  }
 })
 .add({
   targets: '.cover',
@@ -136,9 +136,9 @@ const Home = () => {
       // {value: '100%', easing: 'easeOutElastic(1, .9)', duration: 500}
   ],
   duration: '3000',
-	complete: function() {
-	 document.querySelector(".cover").style.display = "none";
-	}
+  complete: function () {
+	 document.querySelector('.cover').style.display = 'none'
+  }
 }, '+=200')
 // .add({
 //   targets: '.header',
@@ -168,8 +168,9 @@ const Home = () => {
   }, [])
   return (
     <React.Fragment>
-			<JobTitle />
-			<MyName />
+      <JobTitle />
+      <MyName />
+      <Blob />
     </React.Fragment>
 
   )
