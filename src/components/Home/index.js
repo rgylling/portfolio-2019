@@ -2,7 +2,6 @@ import React from 'react'
 import JobTitle from './JobTitleOverlay.js'
 import MyName from './MyName.js'
 import anime from 'animejs/lib/anime.es.js'
-import Blob from './Blob.js'
 const Home = () => {
   React.useEffect(() => {
     anime.set(['.letter-a', '.letter-n', '.letter-i'], { translateX: 70 })
